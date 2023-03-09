@@ -14,3 +14,12 @@ class Hacking_Laptop:
         self.success_rates.append(rate_beginner)
         self.success_rates.append(rate_average)
         self.success_rates.append(rate_excellent)
+
+    def choose_hack_location(self):  
+        location = input('Which location would you like to rob? {locations}: '.format(locations = self.locations)).title()
+        while location not in self.locations:
+            location = input('Looks like you had a typo.  Re-enter bank location: ').title()
+
+        print('You chose to rob {location}.  Good Luck Hackerman... Human Captcha input required!'.format(location = location))
+
+        return location
