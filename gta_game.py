@@ -1,3 +1,4 @@
+import random
 from Player import Player
 from Hacking_Laptop import Hacking_Laptop
 
@@ -17,5 +18,3 @@ gold_laptop = Hacking_Laptop('gold', 5000, 3, "the Lower Vault", 9000)
 gold_laptop.add_success_rates(5, 15, 75)
 black_laptop = Hacking_Laptop('black', 500, 3, "the Yacht", 5000)
 black_laptop.add_success_rates(2, 5, 60)
-
-
