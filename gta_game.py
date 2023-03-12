@@ -1,5 +1,6 @@
 from Player import Player
 from create_player import create_player
+from race_or_rob import race_or_rob
 
 #create Buddha, Tony, Yuno players
 lang_buddha = Player('Lang Buddha', 'bad', 'average', 5000)
@@ -10,5 +11,4 @@ yuno_sykk = Player('Yuno Sykk', 'good', 'exellent', 500)
 player_1 = create_player()
 player_1_laptop_inventory = []
 
-
-
+race_or_rob(player_1, player_1_laptop_inventory, lang_buddha, tony_corleone, yuno_sykk)

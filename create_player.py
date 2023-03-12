@@ -12,6 +12,6 @@ def create_player():
     while player_1_hacking_ability != 'beginner' and player_1_hacking_ability != 'average' and player_1_hacking_ability != 'expert':
         player_1_hacking_ability = input('Yuno thinks you may have accidentally typed something wrong.  Please type either beginner, average, or expert for your hacking ability: ').lower()
 
-    player_1 = Player(player_1_name, player_1_driving_ability, player_1_hacking_ability, 5000)
+    player_1 = Player(player_1_name, player_1_driving_ability, player_1_hacking_ability, 500)
     print(player_1)
     return player_1

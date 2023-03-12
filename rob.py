@@ -183,3 +183,5 @@ def rob(player_1, player_1_laptop_inventory):
             if player_1.money_total <= 0 and len(player_1.laptops) == 0:
                 print('You do not have any money left and you have no laptops in your inventory.  Sadge.  GAME OVER')
                 sys.exit()
+
+    return True

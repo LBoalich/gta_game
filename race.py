@@ -50,15 +50,20 @@ def race(player_1, player_2):
   elif (player_1.driving_ability == 'great' and player_2.driving_ability == "bad"):
     if random_int <= 75:
       player_1.money_total += bet
-      
+      win_lose = 'win'
     else:
       player_1.money_total -= bet
+      win_lose = 'lose'
       
 #print win/lose statement
   if win_lose == 'win':
     print('Congratulations!  You won the race and made ${bet}.'.format(bet = bet))
-  else:
+    return True
+  elif win_lose == "lose":
     print("You wrecked into a local and totaled your car.  You hand over ${bet} to {player_2_name}.  Now you have ${money_total} left.".format(bet = bet, player_2_name = player_2.name, money_total = player_1.money_total))
     if player_1.money_total <= 0 and len(player_1.laptops) == 0:
       print('You do not have any money left.  Sadge.  GAME OVER')
       sys.exit()
+    else:
+      return True
+  

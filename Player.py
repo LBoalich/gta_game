@@ -56,6 +56,3 @@ class Player:
             self.laptops.append(laptop_color)
             print('You spent ${laptop_price} and now have ${money_total} left.'.format(laptop_price = laptop_price, money_total = self.money_total))
             return laptop_color
-
-
-
